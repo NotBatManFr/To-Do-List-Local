@@ -140,21 +140,6 @@ All tasks are automatically saved to your browser's localStorage.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-<!-- ROADMAP -->
-## Roadmap
-
-- [ ] Bucket tasks into dateTime categories
-- [ ] Bucket tasks into projects/labels
-- [ ] Integrate DB for data storage online
-    - [ ] Using PostgresDB
-- [ ] Implementing user logins
-
-See the [open issues](https://github.com/github_username/repo_name/issues) for a full list of proposed features (and known issues).
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 <!-- CONTACT -->
 ## Contact
 
