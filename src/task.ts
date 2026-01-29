@@ -8,8 +8,7 @@ import { Priority } from './types/Priority.enum';
 
 function createTask(): TaskFormElements {
   const taskForm = document.createElement('form');
-  const title = document.createElement('input');
-  const description = document.createElement('input');
+  const task = document.createElement('input');
   const dueDate = document.createElement('input');
   const priority = document.createElement('select');
   const optionDefaultPriority = document.createElement('option');
@@ -17,16 +16,10 @@ function createTask(): TaskFormElements {
   const optionNormalPriority = document.createElement('option');
   const optionLowPriority = document.createElement('option');
 
-  setAttributes(title, {
+  setAttributes(task, {
     type: "text",
-    name: "title",
+    name: "task",
     placeholder: "Task"
-  });
-
-  setAttributes(description, {
-    type: "text",
-    name: "description",
-    placeholder: "Description"
   });
 
   setAttributes(dueDate, {
@@ -61,14 +54,14 @@ function createTask(): TaskFormElements {
   
   const actionButtons = addActionButtons(taskForm);
   
-  taskForm.append(title, description, dueDate, priority, actionButtons[0], actionButtons[1], actionButtons[2]);
+  taskForm.append(task, dueDate, priority, actionButtons[0], actionButtons[1], actionButtons[2]);
   
   const container = document.querySelector('#tasksContainer');
   if (container) {
     container.appendChild(taskForm);
   }
 
-  return { taskForm, title, description, dueDate, priority, actionButtons };
+  return { taskForm, task, dueDate, priority, actionButtons };
 }
 
 function addActionButtons(form: HTMLFormElement): [HTMLButtonElement, HTMLButtonElement, HTMLButtonElement] {
@@ -153,18 +146,16 @@ function addActionButtons(form: HTMLFormElement): [HTMLButtonElement, HTMLButton
 }
 
 function formDataToTask(formData: FormData): Task | null {
-  const title = formData.get('title');
-  const description = formData.get('description');
+  const task = formData.get('task');
   const dueDate = formData.get('dueDate');
   const priority = formData.get('priority');
 
   if (
-    typeof title === 'string' &&
-    typeof description === 'string' &&
+    typeof task === 'string' &&
     typeof dueDate === 'string' &&
     (priority === Priority.Low || priority === Priority.Normal || priority === Priority.High)
   ) {
-    return { title, description, dueDate, priority };
+    return { task, dueDate, priority };
   }
 
   return null;
@@ -200,8 +191,7 @@ function loadData(): void {
 }
 
 function populateValues(target: TaskFormElements, source: Task): void {
-  target.title.value = source.title;
-  target.description.value = source.description;
+  target.task.value = source.task;
   target.dueDate.value = source.dueDate;
   target.priority.value = source.priority;
 }
