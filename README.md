@@ -18,7 +18,7 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
-<a href="https://www.linkedin.com/in/mritesh-adak-8b7439106/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+<a href="https://to-do-list-ts.page.gd/" target="_blank" rel="noopener noreferrer">To the App [To-Do]</a>
 
 <!-- TABLE OF CONTENTS -->
 <details>
@@ -38,9 +38,6 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-
-
-<a href="https://to-do-list-ts.page.gd/" target="_blank" rel="noopener noreferrer">To the App [To-Do]</a>
 
 A local task management application designed to help you organize and track your to-do items with ease. Create tasks with detailed information, set priorities, assign due dates and times, and manage your productivity all from your browser using local storage.
 
@@ -158,6 +155,7 @@ All tasks are automatically saved to your browser's localStorage.
 Mritesh Adak - mriteshadak@outlook.com
 
 Project Link: [https://github.com/MriteshAdak/To-Do-List](https://github.com/MriteshAdak/To-Do-List)
+<a href="https://www.linkedin.com/in/mritesh-adak-8b7439106/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
