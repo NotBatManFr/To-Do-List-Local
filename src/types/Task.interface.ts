@@ -1,8 +1,7 @@
 import { Priority } from './Priority.enum';
 
 export interface Task {
-  title: string;
-  description: string;
+  task: string;
   dueDate: string;
   priority: Priority;
 }

@@ -75,6 +75,11 @@ input, select {
     border-bottom: 1px solid lightgrey;
 }
 
+input[name='task'] {
+    flex: 3;
+    min-width: 300px;
+}
+
 input:disabled, select:disabled {
     background-color: azure;
     color: black;
