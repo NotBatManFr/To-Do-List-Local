@@ -18,7 +18,7 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
-<a href="https://to-do-list-ts.page.gd/" target="_blank" rel="noopener noreferrer">To the App [To-Do]</a>
+<a href="https://mritesh-todo-list.page.gd/" target="_blank" rel="noopener noreferrer">To the App [To-Do]</a>
 
 <!-- TABLE OF CONTENTS -->
 <details>
